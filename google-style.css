@@ -1,0 +1,130 @@
+html{
+    font-size: 16px;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+   
+}
+
+ul{
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    padding: 10px;
+    color: grey;
+}    
+
+a:hover {
+    color: rgb(41, 40, 40);
+}
+
+#nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 10px;
+    font-size: 0.8em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: grid;
+    justify-content: center;
+    grid-template-areas: 
+    "logo"
+    "bar-container"
+    "buttons"
+    "language";
+    grid-gap:10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 150px;
+}
+
+#logo {
+    grid-area: logo;
+    padding: 40px;
+    justify-self: center;
+}
+
+#bar-container {
+    grid-area: bar-container;
+    padding: 10px;
+}
+
+#bar-container {
+    display: grid;
+    grid-template-columns: 1fr 300px 1fr 1fr;
+    grid-gap:5px;
+    align-content: center;
+    height: 30px;
+    border: 1px solid rgba(175, 174, 174, 0.733);
+    border-radius: 30px;
+    align-items: center;
+    
+}
+.material-icons{
+    color: rgba(20, 20, 20, 0.877);
+
+}
+input[type=text] {
+    box-sizing: border-box;
+    padding-left: 40px;
+    border:none;
+    height: 50px;
+    
+}
+#buttons {
+    grid-area: buttons;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding: 5px;
+    width: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:5px;
+ 
+}
+
+button {
+    width: 100%;
+    border: 1px solid rgba(175, 174, 174, 0.09);
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(22, 22, 22);
+    background: rgba(128, 128, 128, 0.07);
+}
+
+button:hover {
+    border: 1px solid rgba(175, 174, 174, 0.2);
+    background: rgba(128, 128, 128, 0.17);
+}
+#language {
+    font-size: 0.8em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#language p{
+    margin-left: 60px;
+}
+#language a{
+    color: rgb(10, 0, 100);
+}
+.footer{
+    position: absolute;
+    color: grey;
+    width: 100vw;
+    font-size: 0.9em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#footer-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 0.8em;
+}
+
